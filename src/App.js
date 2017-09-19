@@ -6,8 +6,7 @@ import SearchBar from "./components/search_bar";
 import VideoList from "./components/video_list";
 import VideoDetail from "./components/video_detail";
 import './App.css';
-import CommentBox from './components/comment_box';
-import CommentList from './components/comment_list';
+
 
 const API_KEY = "AIzaSyAuQCVeNfKhtRk9KlChQPT1nO27DPO_5Ss";
 
@@ -45,10 +44,9 @@ class App extends Component {
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
           videos={this.state.videos}
         />
-        <div>
-        <CommentBox />
-        <CommentList />
-        </div>
+       
+        
+        
         </div>
     );
   }

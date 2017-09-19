@@ -1,4 +1,6 @@
 import React from "react";
+import CommentBox from './comment_box';
+import CommentList from './comment_list';
 
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -17,6 +19,8 @@ const VideoDetail = ({ video }) => {
         <div className="title">{video.snippet.title}</div>
         <div>{video.snippet.description}</div>
       </div>
+      <CommentBox />
+        <CommentList />
     </div>
   );
 };
